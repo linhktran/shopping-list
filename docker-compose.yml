@@ -2,11 +2,11 @@ version: "3.4"
 
 services:
   app:
-    build: shopping-lists
+    build: app
     image: app
     restart: "no"
     volumes:
-      - ./shopping-lists/:/app
+      - ./app/:/app
       - ./app-cache/:/app-cache
     ports:
       - 7777:7777
