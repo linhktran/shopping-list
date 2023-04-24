@@ -2,7 +2,7 @@
 
 <p><a href="/lists"> Lists </a></p>
 
-<% if (it.lists !== null) { %>
+<% if (it.lists !== "0") { %>
     <h2>Shopping lists: <%= it.lists %></h2>
     <h2>Shopping list items: <%= it.items %></h2>
 <% } else { %>
