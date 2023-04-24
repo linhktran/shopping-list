@@ -1,10 +1,6 @@
 import * as itemService from "../services/itemService.js";
 import * as requestUtils from "../utils/requestUtils.js";
 
-const responseDetails = {
-  headers: { "Content-Type": "text/html;charset=UTF-8" },
-};
-
 const addItem = async (request) => {
   const formData = await request.formData();
   const name = formData.get("name");

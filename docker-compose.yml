@@ -2,11 +2,11 @@ version: "3.4"
 
 services:
   app:
-    build: app
+    build: .
     image: app
     restart: "no"
     volumes:
-      - ./app/:/app
+      - ./:/app
       - ./app-cache/:/app-cache
     ports:
       - 7777:7777
